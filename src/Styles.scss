@@ -1,0 +1,241 @@
+body {
+    background: #000;
+
+}
+
+
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.loading-panda {
+    display: block;
+    width: max-content;
+    margin: auto;
+    max-height: max-content;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    justify-content: center;
+    transition: 1.5s ease;
+    z-index: 9999;
+}
+
+
+
+.loading-panda img {
+    margin: auto;
+    max-width: 80px;
+    animation: pandaMove 1s ease infinite alternate;
+    display: block;
+}
+
+.loading-panda p {
+    font-weight: 600;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.loading-panda.open {
+    opacity: 1;
+}
+
+.loading-panda.closed {
+    opacity: 0;
+}
+
+.case {
+    display: block;
+    background: #222222;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+    max-width: 90%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    border-radius: 12px;
+    animation: showCase 1s ease ;
+}
+
+@keyframes showCase {
+    from {
+        transform: translateY(-40px);
+        scale: 0.9;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.case .buttons {
+    width: max-content;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+
+.case p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.case img {
+    max-width: 86px;
+    margin: auto;
+    display: block;
+}
+
+.case .buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pq-ereasi {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.pq-ereasi .center {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pq-ereasi .center button {
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.pq-ereasi .center img {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.background-2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.background-2.love {
+    background: url("https://cliply.co/wp-content/uploads/2020/01/402001940_HEARTS_BG_400px.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+.background-2.reencuentroblur {
+    background: url("/img/reencuentro.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(25px);
+}
+
+.background-2.reencuentro {
+    background: url("/img/reencuentro.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.1);
+    z-index: 1;
+}
+
+.game {
+    display: block;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+.game .center {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    width: max-content;
+    padding: 10px;
+    background: black;
+    margin: auto;
+    right: 0;
+    left: 0;
+    border-radius: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.game .center p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.game .options {
+    margin: auto;
+    position: relative;
+    width: max-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.background-loading {
+    position: fixed;
+    background: black;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.game button {
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.case .album img {
+    width: 100%;
+    display: block;
+    position: relative;
+    max-width: fit-content;
+    border-radius: 12px;
+}
+
+@keyframes pandaMove {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
